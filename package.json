@@ -16,8 +16,7 @@
     "package": "yarn run build; yarn run package-osx; yarn run package-win; yarn run package-linux;",
     "package-osx": "electron-packager ./ --platform=darwin --arch=x64 --icon=assets/app.icns --out=package --asar --overwrite=force",
     "package-win": "electron-packager ./ --platform=win32 --arch=ia32 --icon=assets/app.ico --out=package --asar --overwrite=force",
-    "package-linux": "electron-packager ./ --platform=linux --arch=x64 --icon=assets/app.ico --out=package --asar --overwrite=force",
-    "create-debian-installer": "electron-installer-debian --src release-builds/poc-electron-serial-port-linux-x64/ --arch amd64 --config debian.json"
+    "package-linux": "electron-packager ./ --platform=linux --arch=x64 --icon=assets/app.ico --out=package --asar --overwrite=force"
   },
   "repository": {
     "type": "git",
