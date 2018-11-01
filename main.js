@@ -20,7 +20,7 @@ const shell = electron.shell;
 
 if (process.env.NODE_ENV === 'development') {
   require('electron-reload')(__dirname, {
-    electron: require(`${__dirname}/node_modules/electron`)
+    electron: require(`${__dirname}/node_modules/electron`),
   });
 }
 
@@ -34,7 +34,7 @@ function createWindow() {
     minHeight: 600,
     backgroundColor: '#000000',
     show: false,
-    //TODO: incluir a path do ícone:
+    // TODO: incluir a path do ícone:
     icon: path.join(__dirname, ''),
   });
 
@@ -43,12 +43,12 @@ function createWindow() {
   });
 
   if (process.env.NODE_ENV === 'development') {
-    mainWindow.loadURL(`http://localhost:3000`);
+    mainWindow.loadURL('http://localhost:3000');
   } else {
     mainWindow.loadURL(`file://${__dirname}/index.html`);
   }
 
-  if(process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === 'development') {
     mainWindow.webContents.openDevTools();
   }
 

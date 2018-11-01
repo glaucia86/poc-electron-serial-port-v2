@@ -24,7 +24,7 @@ const serialPort = require('serialport');
 
     $targetElm.change((evt) => {
       const value = decodeURIComponent(evt.target.value);
-      alert(value);
+      window.alert(value);
     });
   });
 }());
