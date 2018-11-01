@@ -10,7 +10,6 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: './src/app.js',
-  // Aqui todas as vezes que executar o comando de build.. irá criar a pasta 'dist'
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -48,7 +47,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.plugins = [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: 'production',
+        NODE_ENV: '"production"',
       },
     }),
   ];
