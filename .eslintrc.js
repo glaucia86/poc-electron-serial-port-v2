@@ -6,9 +6,6 @@ module.exports = {
     "window": true,
     "document": true
   },
-  env: {
-    browser: true,
-  },
   "plugins": [
     "import",
     "html"
@@ -22,6 +19,8 @@ module.exports = {
     "no-shadow": "off",
     "import/extensions": "off",
     "no-multi-assign": "off",
+    "import/no-dynamic-require": "off",
+    "prefer-destructuring": "off",
     "no-alert": "off",
     "import/no-extraneous-dependencies": [
       "error",

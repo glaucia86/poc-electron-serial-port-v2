@@ -9,7 +9,6 @@ Portaserial.list().then((ports) => {
   ports.forEach((item) => {
     // console.log('current  port ', item.comName);
 
-
     const port = new Portaserial(item.comName, {
       baudRate: 9600,
     });
