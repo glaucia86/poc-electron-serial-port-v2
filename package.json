@@ -63,6 +63,7 @@
     "electron": "^1.8.2",
     "electron-builder": "^20.28.4",
     "electron-installer-dmg": "^2.0.0",
+    "electron-installer-debian": "^1.0.0",
     "electron-packager": "^12.2.0",
     "electron-reload": "^1.2.2",
     "eslint": "^5.8.0",
