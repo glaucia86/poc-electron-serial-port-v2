@@ -28,7 +28,6 @@ Para realizar as demos dessa série, se faz necessário instalar os seguintes pr
 * VueJs v. 3.x;
 * Yarn - [DOWNLOAD AQUI](https://yarnpkg.com/pt-BR/);
 * Electron v. 1.x - [DOWNLOAD AQUI](https://electronjs.org/);
-* Photon UI - [DOWNLOAD AQUI](http://photonkit.com);
 * Uso da Biblioteca: [serial Port](https://www.npmjs.com/package/serialport);
 * Uso da Biblioteca v.1.x: [node-usb](https://www.npmjs.com/package/node-usb);
 * Uso da Biblioteca: [electron-packager](https://github.com/electron-userland/electron-packager);
