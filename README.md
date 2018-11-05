@@ -24,7 +24,7 @@ A aplicação também precisa permitir listar as portas:
 Para realizar as demos dessa série, se faz necessário instalar os seguintes programas:
 
 * Visual Studio Code - [DOWNLOAD AQUI](https://code.visualstudio.com/);
-* Node.JS v.10 - [DOWNLOAD AQUI](https://nodejs.org/en/);
+* Node.JS v.8.x - [DOWNLOAD AQUI](https://nodejs.org/en/);
 * VueJs v. 3.x;
 * Yarn - [DOWNLOAD AQUI](https://yarnpkg.com/pt-BR/);
 * Electron v. 1.x - [DOWNLOAD AQUI](https://electronjs.org/);
@@ -52,37 +52,37 @@ Passo: 1) **Node.Js**: Caso não tenha, basta realizar o download [Aqui](https:/
 Passo: 2) **Instalar Globalmente o Electron**: bastam digitar o comando abaixo:
 
 ```
-> yarn -g add electron
+> npm install -g add electron
 ```
 
 Passo: 3) **Instalar Globalmente o electron-packager**: bastam digitar o comando abaixo:
 
 ```
-> yarn -g add electron-packager 
+> npm install -g electron-packager 
 ```
 
 Passo: 5) **Instalar Globalmente o node-pre-gyp**: bastam digitar o comando abaixo: 
 
 ```
-> yarn -g add node-pre-gyp 
+> npm install -g node-pre-gyp 
 ```
 
 Passo: 6) **Instalar Globalmente o electron-builder**: bastam digitar o comando abaixo:
 
 ```
-> yarn -g add electron-builder 
+> npm install -g electron-builder 
 ```
 
 Passo: 7) **Instalar Globalmente o electron-installer-debian**: bastam digitar o comando abaixo: (Usuários Linux)
 
 ```
-> yarn -g add electron-installer-debian 
+> npm install -g electron-installer-debian 
 ```
 
 Passo: 8) **Instalar Globalmente o node-gyp**: bastam digitar o comando abaixo:
 
 ```
-> yarn -g add node-gyp 
+> npm install -g node-gyp 
 ```
 
 Passo: 8.1) Já para usuários Windows, para realizar a instalação do **node-gyp** se faz necessário seguir os passos abaixo:
