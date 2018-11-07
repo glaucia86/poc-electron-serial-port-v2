@@ -18,6 +18,7 @@ Vue.use(Router);
 export default new Router({
   routes: [
     { path: '/', name: 'home', component: Home },
+    { path: '/home', redirect: '/' },
     { path: '/checkin', name: 'checkin', component: Checkin },
     { path: '/about', name: 'about', component: About },
     { path: '/contactus', name: 'contactus', component: ContactUs },
