@@ -13,6 +13,7 @@
           <li><a href="http://zooxsmart.com/pt-br/">Entre em Contato</a></li>
         </ul>
       </nav>
+      <router-view></router-view>
       <!-- /# Fim Sidebar-wrapper -->
 
       <!-- Page Content -->
