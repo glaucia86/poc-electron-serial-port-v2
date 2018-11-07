@@ -7,20 +7,20 @@
 
 import Vue from 'vue';
 import Router from 'vue-router';
-import Skills from '../components/Skills.vue';
 import About from '../components/About.vue';
+import Checkin from '../components/Checkin.vue';
+import ContactUs from '../components/ContactUs.vue';
 import Home from '../components/Home.vue';
+import Registration from '../components/Registration.vue';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     { path: '/', name: 'home', component: Home },
-    { path: '/skills', name: 'skills', component: Skills },
-    {
-      path: '/about',
-      name: 'about',
-      component: About,
-    },
+    { path: '/checkin', name: 'checkin', component: Checkin },
+    { path: '/about', name: 'about', component: About },
+    { path: '/contactus', name: 'contactus', component: ContactUs },
+    { path: '/registration', name: 'registration', component: Registration },
   ],
 });
