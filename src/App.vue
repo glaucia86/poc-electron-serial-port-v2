@@ -7,10 +7,10 @@
         <ul class="nav sidebar-nav">
           <li class="sidebar-brand"><a href="#">Zoox | Brand</a></li>
           <li><router-link to="/">Página Principal</router-link></li>
-          <li><router-link to="/about">Cadastro</router-link></li>
-          <li><router-link to="/about">Check-in</router-link></li>
+          <li><router-link to="/registration">Cadastro</router-link></li>
+          <li><router-link to="/checkin">Check-in</router-link></li>
           <li><router-link to="/about">Sobre</router-link></li>
-          <li><a href="http://zooxsmart.com/pt-br/">Entre em Contato</a></li>
+          <li><router-link to="/contactus">Entre em Contato</router-link></li>
         </ul>
       </nav>
       <router-view></router-view>
@@ -28,3 +28,8 @@
     </div>
     <!-- /#wrapper -->
 </template>
+
+<script></script>
+
+<style></style>
+
