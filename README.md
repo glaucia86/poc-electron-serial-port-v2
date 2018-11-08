@@ -1,4 +1,4 @@
-# POC | MVP: Aplicação em Electron com Serial Port & Identificador de Portas USB v.2: 
+# POC | MVP: Aplicação em Electron de Identificador de Portas USB v.2: 
 
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](https://github.com/glaucia86/poc-electron-serial-port-v2/blob/master/LICENSE.md)
 [![Last version](https://img.shields.io/badge/version-v1.0.0-blue.svg?style=for-the-badge)](https://github.com/glaucia86/poc-electron-serial-port-v2/blob/master/CHANGELOG.md)
@@ -25,7 +25,7 @@ Para realizar as demos dessa série, se faz necessário instalar os seguintes pr
 
 * Visual Studio Code - [DOWNLOAD AQUI](https://code.visualstudio.com/);
 * Node.JS v.8.x - [DOWNLOAD AQUI](https://nodejs.org/en/);
-* VueJs v. 3.x;
+* VueJs v. 3.x; - [DOWNLOAD AQUI](https://cli.vuejs.org/)
 * Yarn - [DOWNLOAD AQUI](https://yarnpkg.com/pt-BR/);
 * Electron v. 1.x - [DOWNLOAD AQUI](https://electronjs.org/);
 * Uso da Biblioteca: [serial Port](https://www.npmjs.com/package/serialport);
@@ -34,6 +34,7 @@ Para realizar as demos dessa série, se faz necessário instalar os seguintes pr
 * Uso da Biblioteca: [electron-builder](https://github.com/electron-userland/electron-builder);
 * ESlint;
 * ES5;
+* Webpack;
 
 ## Executando Código Localmente: :bulb: 
 
@@ -48,6 +49,7 @@ Para começar, você deve simplesmente clonar o repositório do projeto na sua m
 Antes de instalar as dependências no projeto, você precisa seguir os seguintes passos:
 
 Passo: 1) **Node.Js**: Caso não tenha, basta realizar o download [Aqui](https://nodejs.org/en/)
+
 
 Passo: 2) **Instalar Globalmente o Electron**: bastam digitar o comando abaixo:
 
@@ -120,6 +122,12 @@ Passo: 8.1) Já para usuários Windows, para realizar a instalação do **node-g
 
 ```
 > node-gyp build
+```
+
+Passo: 9) Instalar globalmente os pacotes abaixo:
+
+```
+> npm install -g webpack webpack-cli webpack-bundle-analyzer webpack-bundle-analyzer cross-env
 ```
 
 Seguindo todos esses passos, vocês estará para prono para instalar as depedências do projeto na pasta do projeto! ;)
