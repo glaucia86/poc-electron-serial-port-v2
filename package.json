@@ -52,7 +52,8 @@
     "serialport": "^7.0.2",
     "usb": "^1.3.3",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "webcamjs": "^1.0.25"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

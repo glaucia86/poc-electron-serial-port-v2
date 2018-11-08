@@ -35,6 +35,7 @@ Para realizar as demos dessa série, se faz necessário instalar os seguintes pr
 * ESlint;
 * ES5;
 * Webpack;
+* WebcamJS
 
 ## Executando Código Localmente: :bulb: 
 

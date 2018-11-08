@@ -8573,6 +8573,10 @@ wbuf@^1.1.0, wbuf@^1.7.2:
   dependencies:
     minimalistic-assert "^1.0.0"
 
+webcamjs@^1.0.25:
+  version "1.0.25"
+  resolved "https://registry.yarnpkg.com/webcamjs/-/webcamjs-1.0.25.tgz#4ac9645f25545fa01a29a59b8b00277a14f29416"
+
 webpack-addons@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/webpack-addons/-/webpack-addons-1.1.5.tgz#2b178dfe873fb6e75e40a819fa5c26e4a9bc837a"
