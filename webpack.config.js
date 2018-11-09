@@ -39,6 +39,15 @@ module.exports = {
           name: '[name].[ext]?[hash]',
         },
       },
+      {
+        enforce: 'pre',
+        test: /\.(js|vue)$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          formatter: require('eslint-friendly-formatter'),
+        },
+      },
     ],
   },
 };
