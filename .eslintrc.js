@@ -1,15 +1,12 @@
 module.exports = {
   "root": true,
-  "extends": "airbnb-base",
+  extends: ["plugin:vue/essential", "@vue/prettier"],
   "globals": {
     $: true,
     "window": true,
     "document": true
   },
-  "plugins": [
-    "import",
-    "html"
-  ],
+  "plugins": ["import", "html"],
   "rules": {
     "no-console": "off",
     "import/newline-after-import": "off",
@@ -30,5 +27,5 @@ module.exports = {
     ],
     "no-unused-vars": 0,
     "max-len": 0
-  }
+  },
 };

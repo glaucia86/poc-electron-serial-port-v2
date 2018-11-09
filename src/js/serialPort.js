@@ -6,25 +6,26 @@
  * Author: Glaucia Lemos
  */
 
-const serialPort = require('serialport');
+const serialPort = require("serialport");
 
 (function serialPortInitializer() {
-  const $targetElm = $('#displaySerialPort');
-  const $selectElm = $('<select />');
+  const $targetElm = $("#displaySerialPort");
+  const $selectElm = $("<select />");
 
-  serialPort.list().then((ports) => {
+  serialPort.list().then(ports => {
     ports.forEach((option, index) => {
-      $selectElm.append(`<option value="${encodeURIComponent(JSON.stringify(option))}"> Dispositivo ${index} </option>`);
+      $selectElm.append(
+        `<option value="${encodeURIComponent(
+          JSON.stringify(option)
+        )}"> Dispositivo ${index} </option>`
+      );
     });
 
-    $targetElm
-      .html(
-        $selectElm.html(),
-      );
+    $targetElm.html($selectElm.html());
 
-    $targetElm.change((evt) => {
+    $targetElm.change(evt => {
       const value = decodeURIComponent(evt.target.value);
       window.alert(value);
     });
   });
-}());
+})();

@@ -6,15 +6,15 @@
  * Author: Glaucia Lemos
  */
 
-const ipcPrint = require('electron').ipcRenderer;
+const ipcPrint = require("electron").ipcRenderer;
 
-const printPDFButton = document.getElementById('print-pdf');
+const printPDFButton = document.getElementById("print-pdf");
 
-printPDFButton.addEventListener('click', (evt) => {
-  ipcPrint.send('print-to-pdf');
+printPDFButton.addEventListener("click", evt => {
+  ipcPrint.send("print-to-pdf");
 });
 
-ipcPrint.on('wrote-pdf', (evt, path) => {
+ipcPrint.on("wrote-pdf", (evt, path) => {
   const message = `Wrote PDF to: ${path}`;
-  document.getElementById('pdf-path').innerHTML = message;
+  document.getElementById("pdf-path").innerHTML = message;
 });

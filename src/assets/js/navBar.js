@@ -6,8 +6,8 @@
  */
 
 $(document).ready(() => {
-  const trigger = $('.hamburger');
-  const overlay = $('.overlay');
+  const trigger = $(".hamburger");
+  const overlay = $(".overlay");
   let isClosed = false;
 
   trigger.click(() => {
@@ -18,18 +18,18 @@ $(document).ready(() => {
   function hamburgerCross() {
     if (isClosed === true) {
       overlay.hide();
-      trigger.removeClass('is-open');
-      trigger.addClass('is-closed');
+      trigger.removeClass("is-open");
+      trigger.addClass("is-closed");
       isClosed = false;
     } else {
       overlay.show();
-      trigger.removeClass('is-closed');
-      trigger.addClass('is-open');
+      trigger.removeClass("is-closed");
+      trigger.addClass("is-open");
       isClosed = true;
     }
   }
 
   $('[data-toggle="offcanvas"]').click(() => {
-    $('#wrapper').toggleClass('toggled');
+    $("#wrapper").toggleClass("toggled");
   });
 });
