@@ -2,6 +2,8 @@
 
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](https://github.com/glaucia86/poc-electron-serial-port-v2/blob/master/LICENSE.md)
 [![Last version](https://img.shields.io/badge/version-v1.0.0-blue.svg?style=for-the-badge)](https://github.com/glaucia86/poc-electron-serial-port-v2/blob/master/CHANGELOG.md)
+[![David](https://img.shields.io/david/expressjs/express.svg?style=for-the-badge)](https://david-dm.org/glaucia86/poc-electron-serial-port-v2.svg)
+
 
 
 <br />
