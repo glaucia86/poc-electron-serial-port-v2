@@ -7,12 +7,12 @@
 
 import Vue from "vue";
 import Router from "vue-router";
-import About from "../components/About.vue";
-import Checkin from "../components/Checkin.vue";
-import ContactUs from "../components/ContactUs.vue";
-import Home from "../components/Home.vue";
-import Registration from "../components/Registration.vue";
-import WebCamera from "../components/WebCamera.vue";
+import About from "../components/About/About.vue";
+import Checkin from "../components/Checkin/Checkin.vue";
+import ContactUs from "../components/ContactUs/ContactUs.vue";
+import Home from "../components/Home/Home.vue";
+import Registration from "../components/Registration/Registration.vue";
+import WebCamera from "../components/WebCamera/WebCamera.vue";
 
 Vue.use(Router);
 

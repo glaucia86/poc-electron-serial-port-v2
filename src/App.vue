@@ -9,7 +9,7 @@
           <li><router-link to="/">Página Principal</router-link></li>
           <li><router-link to="/registration">Cadastro</router-link></li>
           <li><router-link to="/checkin">Check-in</router-link></li>
-          <li><router-link to="/webcam">Webcam</router-link></li>
+          <li><router-link to="/webcamera">Webcam</router-link></li>
           <li><router-link to="/about">Sobre</router-link></li>
           <li><router-link to="/contactus">Entre em Contato</router-link></li>
         </ul>
