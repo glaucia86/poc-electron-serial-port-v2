@@ -11,6 +11,7 @@ module.exports = {
     "no-console": "off",
     "import/newline-after-import": "off",
     "global-require": "off",
+    "no-undef": "off",
     "import/no-unresolved": "off",
     "no-param-reassign": "off",
     "no-shadow": "off",

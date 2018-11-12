@@ -40,6 +40,10 @@ Para realizar as demos dessa série, se faz necessário instalar os seguintes pr
 * Webpack;
 * WebcamJS
 
+
+**obs.: Nesse projeto há bugs quando é executado na versão 10 do Node.js. Assim que, se faz necessário usar a versões pares >10**
+
+
 ## Executando Código Localmente: :bulb: 
 
 Caso desejam testar a aplicação de maneira local bastam seguir os passos abaixo:
@@ -58,7 +62,7 @@ Passo: 1) **Node.Js**: Caso não tenha, basta realizar o download [Aqui](https:/
 Passo: 2) **Instalar Globalmente o Electron**: bastam digitar o comando abaixo:
 
 ```
-> npm install -g add electron
+> npm install -g electron
 ```
 
 Passo: 3) **Instalar Globalmente o electron-packager**: bastam digitar o comando abaixo:
@@ -135,6 +139,41 @@ Passo: 9) Instalar globalmente os pacotes abaixo:
 ```
 
 Seguindo todos esses passos, vocês estará para prono para instalar as depedências do projeto na pasta do projeto! ;)
+
+### Atualização da Instalação pacote: node-gypnode-gyp - 11/2018:
+
+Devido a nova versão do Node.js, houve mudanças significativas inerente aos passos acima para a instalação do pacote **node-gyp**. 
+Após a versão 10.x do Node.js bastam seguir os seguintes passos:
+
+1º - Desinstale da sua máquina o Node.js
+
+2º - Exclua a pasta **npm** localizada no AppData: (remove manualmente):
+
+```
+C:\Users\<folder-name>\AppData\Roaming\npm directory was not deleted.
+```
+
+3º - Reinstale a última versão do Node.js 10.x: [https://nodejs.org/en/](https://nodejs.org/en)
+
+4º - Abre agora o prompt de comando como administrador e execute o comando abaixo:
+
+```
+> npm install npm@latest -g
+```
+
+5º - E finalmente, instale globalmente o pacote **node-gyp** no prompt de comando como adminstrador:
+
+```
+> npm install -g node-gyp
+```
+
+Depois de seguir esses passos, vá até o local onde está o projeto e digite o comando:
+
+```
+> npm install
+```
+
+O problema será resolvido! :)
 
 
 ### Instalando as Dependências (via Windows):

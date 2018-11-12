@@ -5,61 +5,61 @@
  * Author: Glaucia Lemos
  */
 
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/app.js',
+  entry: "./src/app.js",
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js',
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "/dist/",
+    filename: "build.js"
   },
   resolve: {
     alias: {
-      vue: 'vue/dist/vue.esm.js',
-    },
+      vue: "vue/dist/vue.esm.js"
+    }
   },
-  target: 'electron-renderer',
+  target: "electron-renderer",
   module: {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
+        loader: "vue-loader"
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
+        loader: "babel-loader",
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file',
+        loader: "file",
         query: {
-          name: '[name].[ext]?[hash]',
-        },
+          name: "[name].[ext]?[hash]"
+        }
       },
       {
-        enforce: 'pre',
+        enforce: "pre",
         test: /\.(js|vue)$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader',
+        loader: "eslint-loader",
         options: {
-          formatter: require('eslint-friendly-formatter'),
-        },
-      },
-    ],
-  },
+          formatter: require("eslint-friendly-formatter")
+        }
+      }
+    ]
+  }
 };
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
   module.exports.plugins = [
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: '"production"',
-      },
-    }),
+      "process.env": {
+        NODE_ENV: '"production"'
+      }
+    })
   ];
 } else {
-  module.exports.devtool = '#source-map';
+  module.exports.devtool = "#source-map";
 }
