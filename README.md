@@ -200,7 +200,7 @@ Ao digitar a instrução acima, automaticamente ele irá baixar todas as depend�
 Para a execução da aplicação se faz necessário ir até o **'src'** do projeto e executar o seguinte comando abaixo:
 
 ```
-yarn run start
+yarn run exec
 ```
 
 Ao executar o comando acima, apresentará a seguinte janela da aplicação no Electron:
@@ -225,7 +225,7 @@ Para distros Linux, bastam digitar o comando abaixo:
 Criará uma pasta 'release-builds'. Após criado, digitar o comando abaixo: **o script abaixo deve ser executado via 'npm'**
 
 ```
-> npm run create-debian-installer
+> yarn run create-debian-installer
 ```
 
 E... vòilá! Bastam entrar na pasta **'package'** e encontrar a extensão .deb para fazer a instalação da aplicação no seu Linux! :smiley:
