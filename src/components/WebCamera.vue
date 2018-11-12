@@ -4,7 +4,7 @@
       <div class="col-lg-12">
          <h1>Esta é a Página Webcam</h1>
          <p>Testando o pacote: WebcamJs:</p>
-         <div id="camera"></div>
+         <div class="camera" id="camdemo"></div>
          <br />
          <div class="text-center">
             <input type="button" class="btn btn-primary" id="start" value="Ligar | Desligar Camera">
@@ -14,7 +14,12 @@
 </div>
 </template>
 
-<script></script>
+<script>
+export default {
+
+}
+</script>
+
 
 <style>
 #camera {

@@ -53,11 +53,10 @@
 
       <button class="btn btn-primary" id="print-pdf">Imprimir</button>
     </div>
-  </div>   
+  </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style></style>
 

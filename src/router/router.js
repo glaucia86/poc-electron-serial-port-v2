@@ -12,7 +12,7 @@ import Checkin from "../components/Checkin.vue";
 import ContactUs from "../components/ContactUs.vue";
 import Home from "../components/Home.vue";
 import Registration from "../components/Registration.vue";
-import Webcam from "../components/Webcam.vue";
+import WebCamera from "../components/WebCamera.vue";
 
 Vue.use(Router);
 
@@ -21,7 +21,7 @@ export default new Router({
     { path: "/", name: "home", component: Home },
     { path: "/home", redirect: "/" },
     { path: "/checkin", name: "checkin", component: Checkin },
-    { path: "/webcam", name: "webcam", component: Webcam },
+    { path: "/webcamera", name: "webcamera", component: WebCamera },
     { path: "/about", name: "about", component: About },
     { path: "/contactus", name: "contactus", component: ContactUs },
     { path: "/registration", name: "registration", component: Registration }
