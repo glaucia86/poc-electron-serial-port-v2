@@ -6,10 +6,13 @@
  */
 
 import Vue from "vue";
+import WebCamera from "webcamjs";
+
+let enabled = false;
 
 export default {
   name: "WebCamera",
   components: {},
-  methods: {},
-  data() {}
+  data() {},
+  methods: {}
 };

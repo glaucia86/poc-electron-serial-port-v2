@@ -16,9 +16,6 @@
 
 <script src="./WebCamera.js" />
 
-</script>
-
-
 <style>
 #camera {
   width: 320px;
