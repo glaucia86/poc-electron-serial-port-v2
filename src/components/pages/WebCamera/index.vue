@@ -14,7 +14,7 @@
 </div>
 </template>
 
-<script >
+<script src="./WebCamera.js" />
 
 </script>
 
