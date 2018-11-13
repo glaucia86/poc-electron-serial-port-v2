@@ -9,7 +9,5 @@ import Vue from "vue";
 
 export default {
   name: "WebCamera",
-  components: {},
-  methods: {},
-  data() {}
+  methods: {}
 };

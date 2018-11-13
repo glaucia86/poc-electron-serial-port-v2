@@ -9,7 +9,5 @@ import Vue from "vue";
 
 export default {
   name: "Checkin",
-  components: {},
-  methods: {},
-  data() {}
+  methods: {}
 };

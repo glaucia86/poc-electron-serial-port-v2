@@ -43,8 +43,6 @@
    </div>
 </template>
 
-<script src="./WebCamera.js" />
+<script src="./WebCamera.js"/>
 
-<style>
-
-</style>
+<style></style>

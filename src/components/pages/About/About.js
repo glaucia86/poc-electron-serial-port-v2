@@ -9,7 +9,5 @@ import Vue from "vue";
 
 export default {
   name: "About",
-  components: {},
-  methods: {},
-  data() {}
+  methods: {}
 };

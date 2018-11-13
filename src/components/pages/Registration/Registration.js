@@ -9,7 +9,5 @@ import Vue from "vue";
 
 export default {
   name: "Registration",
-  components: {},
-  methods: {},
-  data() {}
+  methods: {}
 };
