@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script src="../Registration.js" />
+<script src="./Registration.js" />
 
 <style></style>
 

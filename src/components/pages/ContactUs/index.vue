@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script src="../ContactUs.js" />
+<script src="./ContactUs.js" />
 
 <style></style>
 
