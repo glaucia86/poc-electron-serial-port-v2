@@ -56,7 +56,7 @@
   </div>
 </template>
 
-<script></script>
+<script src="../Home.js"></script>
 
 <style></style>
 

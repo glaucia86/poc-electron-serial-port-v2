@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script src="./About.js" />
+<script src="../About.js" />
 
 <style></style>
 
