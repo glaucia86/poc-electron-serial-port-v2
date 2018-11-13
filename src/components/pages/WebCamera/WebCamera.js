@@ -5,9 +5,8 @@
  * Author: Glaucia Lemos
  */
 
-import { WebCam } from "vue-web-cam"
+import { WebCam } from "vue-web-cam";
 import { find, head } from "lodash";
-
 
 export default {
   name: "app",
