@@ -9,5 +9,21 @@ import Vue from "vue";
 
 export default {
   name: "Home",
-  methods: {}
+  data() {
+    return {
+      message: ""
+    };
+  },
+  methods: {
+    handlerChange: function() {
+      const ipcPrint = require("electron").ipcRenderer;
+
+      ipcPrint.send("print-to-pdf");
+
+      ipcPrint.on("wrote-pdf", (evt, path) => {
+        const message = `Wrote PDF to: ${path}`;
+        this.message = message;
+      });
+    }
+  }
 };

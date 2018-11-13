@@ -51,7 +51,7 @@
       </div>
       <!-- Fim textarea - comment'-->
 
-      <button class="btn btn-primary" id="print-pdf">Imprimir</button>
+      <button class="btn btn-primary" @click="handlerChange()" id="print-pdf">Imprimir</button>
     </div>
   </div>
 </template>
