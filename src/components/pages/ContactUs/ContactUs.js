@@ -6,7 +6,7 @@
  */
 
 export default {
-  name: "ContactUs",
+  name: "app",
   data() {
     return {
       printing: false,
