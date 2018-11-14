@@ -1,4 +1,4 @@
-/**
+/*
  * Arquivo: src/components/pages/Home/Home.js
  * Data: 12/11/2018
  * Descrição: arquivo responsável por tratar a lógica do 'Home.js'

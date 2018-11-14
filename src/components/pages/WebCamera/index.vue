@@ -7,6 +7,7 @@
             <code v-if="device">{{ device.label }}</code>
             <div class="border">
                <web-cam
+               ref="webcam"
                width="100%"
                :deviceId="deviceId"
                @started="onStarted"
