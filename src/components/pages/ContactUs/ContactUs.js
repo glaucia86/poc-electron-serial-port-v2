@@ -5,6 +5,9 @@
  * Author: Glaucia Lemos
  */
 
+import { spawn } from "child_process";
+import fs from "fs";
+
 export default {
   name: "app",
   data() {
@@ -15,14 +18,15 @@ export default {
   },
   methods: {
     PrintTextAreaContent: function() {
-      const { spawn } = require("child_process");
-      const fs = require("fs");
       const fileName = "out.txt";
 
       fs.writeFile(fileName, this.textarea_field, err => {
         if (err) {
-          return console.log("error writing file", err);
+          alert("Error " + err);
+          return alert("error writing file", err);
         }
+
+        alert(this.textarea_field);
 
         const child = spawn("lpr", [
           "-P",
@@ -36,14 +40,15 @@ export default {
           "-o page-bottom=5",
           "out.txt"
         ]);
-
         child.stdout.on("end", data => {
           removeFile(fileName, () => {
+            alert("remove ");
             console.log("Successfully printed!");
           });
         });
 
         child.stdout.on("error", data => {
+          alert("Print Error" + data);
           removeFile(fileName, () => {
             console.log("err printing ", data);
           });
