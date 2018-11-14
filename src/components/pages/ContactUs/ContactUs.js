@@ -22,11 +22,8 @@ export default {
 
       fs.writeFile(fileName, this.textarea_field, err => {
         if (err) {
-          alert("Error " + err);
           return alert("error writing file", err);
         }
-
-        alert(this.textarea_field);
 
         const child = spawn("lpr", [
           "-P",
@@ -42,13 +39,11 @@ export default {
         ]);
         child.stdout.on("end", data => {
           removeFile(fileName, () => {
-            alert("remove ");
             console.log("Successfully printed!");
           });
         });
 
         child.stdout.on("error", data => {
-          alert("Print Error" + data);
           removeFile(fileName, () => {
             console.log("err printing ", data);
           });
