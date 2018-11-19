@@ -5,8 +5,6 @@
  * Author: Glaucia Lemos
  */
 
-import Vue from "vue";
-
 export default {
   name: "Home",
   data() {
