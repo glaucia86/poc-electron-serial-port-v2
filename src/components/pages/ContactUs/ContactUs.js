@@ -25,6 +25,8 @@ export default {
           return alert("error writing file", err);
         }
 
+        // Comando para listar somente o nome das impressoras:
+        // lpstat -a | awk '{print $1}'
         const child = spawn("lpr", [
           "-P",
           "BK-C310-U-1",
