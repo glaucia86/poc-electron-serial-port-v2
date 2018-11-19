@@ -5,7 +5,7 @@
  * Author: Glaucia Lemos
  */
 
-import { spawn } from "child_process";
+import { spawn, exec } from "child_process";
 import fs from "fs";
 
 export default {
@@ -13,8 +13,20 @@ export default {
   data() {
     return {
       printing: false,
-      textarea_field: ""
+      textarea_field: "",
+      printers: [],
+      currentPrinter: ""
     };
+  },
+  mounted() {
+    exec("lpstat -a | awk '{print $1}'", (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error}`);
+        return;
+      }
+      this.printers = stdout.split("\n");
+      console.log(this.printers);
+    });
   },
   methods: {
     PrintTextAreaContent: function() {
@@ -25,11 +37,9 @@ export default {
           return alert("error writing file", err);
         }
 
-        // Comando para listar somente o nome das impressoras:
-        // lpstat -a | awk '{print $1}'
         const child = spawn("lpr", [
           "-P",
-          "BK-C310-U-1",
+          `${this.currentPrinter}`,
           "-o landscape",
           "-o PageSize=w68h252",
           "-o CutOptions=ChainMarks",
