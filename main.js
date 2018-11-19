@@ -12,12 +12,6 @@ const BrowserWindow = electron.BrowserWindow;
 const $ = require("jquery");
 const path = require("path");
 
-// Variáveis responsáveis pela Impressão com Electron:
-const fs = require("fs");
-const os = require("os");
-const ipc = electron.ipcMain;
-const shell = electron.shell;
-
 if (process.env.NODE_ENV === "development") {
   require("electron-reload")(__dirname, {
     electron: require(`${__dirname}/node_modules/electron`)
