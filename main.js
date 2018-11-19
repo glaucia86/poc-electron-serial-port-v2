@@ -72,19 +72,3 @@ app.on("active", () => {
     createWindow();
   }
 });
-
-// Lógica inerente a impressão em PDF com Electron:
-ipc.on("print-to-pdf", evt => {
-  const pdfPath = path.join(os.tmpdir(), "print.pdf");
-  const win = BrowserWindow.fromWebContents(evt.sender);
-
-  win.webContents.printToPDF({}, (error, data) => {
-    if (error) return console.log(error.message);
-
-    fs.writeFile(pdfPath, data, err => {
-      if (err) return console.log(err.message);
-      shell.openExternal(`file://${pdfPath}`);
-      evt.sender.send("wrote-pdf", pdfPath);
-    });
-  });
-});
