@@ -28,7 +28,7 @@ export default {
       this.printers = stdout.split("\n");
       console.log(this.printers);
 
-      storage.get("../config/settings.json", (err, data) => {
+      this.getLocalSettings("currentConfig.json", (err, data) => {
         if (err) {
           console.error(err);
         } else {
@@ -87,21 +87,35 @@ export default {
       };
 
       storage
-        .set("../config/settings.json", data)
+        .set("currentConfig", data)
         .then(() => {
-          /*storage.get("../config/settings.json", (err, data) => {
-            if (err) {
-              console.error(err);
-            } else {
-              console.log(data);
-            }
-          });
-          console.log("O arquivo foi gravado com sucesso no Storage");*/
           console.log(data);
         })
         .catch(err => {
           console.error(err);
         });
+    },
+
+    getLocalSettings(fileName, callBack) {
+      storage.isPathExists(fileName, exists => {
+        if (exists) {
+          storage.get(fileName, (err, data) => {
+            if (data) {
+              callBack(null, data);
+            } else {
+              callBack(err, null);
+            }
+          });
+        } else {
+          storage.set(fileName, {}, err => {
+            if (err) {
+              callBack(err, null);
+            } else {
+              callBack(null, {});
+            }
+          });
+        }
+      });
     }
   }
 };
