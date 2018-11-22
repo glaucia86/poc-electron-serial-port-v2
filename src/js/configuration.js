@@ -9,9 +9,16 @@
 const storage = require("electron-storage");
 
 storage
-  .set("config/settings", { name: "casa-teste-1" })
+  .set("../config/settings.json", { name: "casa-teste-1" })
   .then(() => {
-    storage.get("config/settings", (err, data) => {
+    storage.isPathExists("../config/settings.json", (err, exists) => {
+      if (!exists) {
+        console.error(err);
+      } else {
+        console.log("A path existe");
+      }
+    });
+    storage.get("../config/settings.json", (err, data) => {
       if (err) {
         console.error(err);
       } else {
