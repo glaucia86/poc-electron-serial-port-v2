@@ -10,7 +10,7 @@ import fs from "fs";
 import storage from "electron-storage";
 
 export default {
-  name: "app",
+  name: "Configuration",
   data() {
     return {
       printing: false,
