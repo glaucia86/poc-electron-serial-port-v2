@@ -13,6 +13,7 @@ import ContactUs from "../components/pages/ContactUs/index.vue";
 import Home from "../components/pages/Home/index.vue";
 import Registration from "../components/pages/Registration/index.vue";
 import WebCamera from "../components/pages/WebCamera/index.vue";
+import Configuration from "../components/pages/Configuration/index.vue";
 
 Vue.use(Router);
 
@@ -24,6 +25,7 @@ export default new Router({
     { path: "/webcamera", name: "webcamera", component: WebCamera },
     { path: "/about", name: "about", component: About },
     { path: "/contactus", name: "contactus", component: ContactUs },
-    { path: "/registration", name: "registration", component: Registration }
+    { path: "/registration", name: "registration", component: Registration },
+    { path: "/configuration", name: "configuration", component: Configuration }
   ]
 });

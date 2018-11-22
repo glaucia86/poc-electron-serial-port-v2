@@ -12,6 +12,7 @@
           <li><router-link to="/webcamera">Webcam</router-link></li>
           <li><router-link to="/about">Sobre</router-link></li>
           <li><router-link to="/contactus">Entre em Contato</router-link></li>
+          <li><router-link to="/configuration">Configuração App</router-link></li>
         </ul>
       </nav>
       <router-view></router-view>

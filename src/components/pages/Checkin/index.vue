@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script src="./Checkin"/>
+<script src="./Checkin.js"/>
 
 <style></style>
 
