@@ -8,14 +8,19 @@
 
 const storage = require("electron-storage");
 
+var data = {
+  name: "Glaucia",
+  age: 32,
+  gender: "Female",
+  department: "Engineering"
+};
+
 storage
-  .set("../config/settings.json", { name: "casa-teste-1" })
+  .set("../config/settings.json", data)
   .then(() => {
-    storage.isPathExists("../config/settings.json", (err, exists) => {
-      if (!exists) {
-        console.error(err);
-      } else {
-        console.log("A path existe");
+    storage.isPathExists("../config/settings.json", exists => {
+      if (exists) {
+        console.log("A path existe", exists);
       }
     });
     storage.get("../config/settings.json", (err, data) => {
