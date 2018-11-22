@@ -20,7 +20,7 @@ storage
   .then(() => {
     storage.isPathExists("../config/settings.json", exists => {
       if (exists) {
-        console.log("A path existe", exists);
+        console.log("A path Existe!", exists);
       }
     });
     storage.get("../config/settings.json", (err, data) => {

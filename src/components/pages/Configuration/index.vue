@@ -13,8 +13,11 @@
             <div class="col-xs-4">
               <label for="sel2">Listar Impressoras Disponíveis</label>
               <select class="form-control" v-model="currentPrinter">
-                <option v-for="printer in printers" v-bind:key="printer" v-bind:value="printer">{{printer}}</option>
+                <option v-for="printer in printers" v-bind:key="printer" v-bind:value="printer">{{ printer }}</option>
               </select>
+              <span class="form-group row">
+                <button class="btn btn-primary" type="button">Gravar Configuração</button>
+              </span>
             </div>
           </div>
         </div>
@@ -28,8 +31,9 @@
       </div>
       <!-- Fim textarea - comment'-->
 
-      <button class="btn btn-primary" @click="PrintTextAreaContent()" :disabled="!currentPrinter">Imprimir</button>
+      <button class="btn btn-primary" @click="PrintTextAreaContent()" :disabled="!currentPrinter">Testar Impressão</button>
     </div>
+
     <div v-if="printing" class="container">
       <div style="white-space:pre-line;">
         {{textarea_field}}
