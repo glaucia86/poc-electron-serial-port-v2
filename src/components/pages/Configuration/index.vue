@@ -16,7 +16,7 @@
                 <option v-for="printer in printers" v-bind:key="printer" v-bind:value="printer">{{ printer }}</option>
               </select>
               <span class="form-group row">
-                <button class="btn btn-primary" type="button">Gravar Configuração</button>
+                <button class="btn btn-primary" @click="settingsConfig()" type="button">Gravar Configuração</button>
               </span>
             </div>
           </div>
@@ -31,7 +31,7 @@
       </div>
       <!-- Fim textarea - comment'-->
 
-      <button class="btn btn-primary" @click="PrintTextAreaContent()" :disabled="!currentPrinter">Testar Impressão</button>
+      <button class="btn btn-primary" @click="printTextAreaContent()" :disabled="!currentPrinter">Testar Impressão</button>
     </div>
 
     <div v-if="printing" class="container">

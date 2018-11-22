@@ -7,6 +7,7 @@
 
 import { spawn, exec } from "child_process";
 import fs from "fs";
+import storage from "electron-storage";
 
 export default {
   name: "app",
@@ -26,10 +27,21 @@ export default {
       }
       this.printers = stdout.split("\n");
       console.log(this.printers);
+
+      storage.get("../config/settings.json", (err, data) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log("Printer....: ", data);
+          if (data && data.printer) {
+            this.currentPrinter = data.printer;
+          }
+        }
+      });
     });
   },
   methods: {
-    PrintTextAreaContent: function() {
+    printTextAreaContent: function() {
       const fileName = "out.txt";
 
       fs.writeFile(fileName, this.textarea_field, err => {
@@ -67,6 +79,29 @@ export default {
           cb();
         });
       };
+    },
+
+    settingsConfig() {
+      const data = {
+        printer: this.currentPrinter
+      };
+
+      storage
+        .set("../config/settings.json", data)
+        .then(() => {
+          /*storage.get("../config/settings.json", (err, data) => {
+            if (err) {
+              console.error(err);
+            } else {
+              console.log(data);
+            }
+          });
+          console.log("O arquivo foi gravado com sucesso no Storage");*/
+          console.log(data);
+        })
+        .catch(err => {
+          console.error(err);
+        });
     }
   }
 };
