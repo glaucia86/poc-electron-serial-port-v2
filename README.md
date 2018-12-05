@@ -9,10 +9,6 @@
 
 <br />
 
-<p align="center">
-  <img src="https://i.imgsafe.org/f5/f5d45ccbe7.jpeg"/>  
-</p>
-
 Desenvolvimento de uma aplicação POC em Electron & VueJs que permita o uso de serial port. Essa aplicação tem como objetivo final ser aplicado num ambiente Windows e ser usado em plataformas de Totem (auto atendimento).
 A aplicação também precisa permitir listar as portas:
 
@@ -204,10 +200,6 @@ yarn run exec
 ```
 
 Ao executar o comando acima, apresentará a seguinte janela da aplicação no Electron:
-
-<p align="center">
-  <img src="https://i.imgsafe.org/f5/f5d45ccbe7.jpeg"/>  
-</p>
 
 É porque foi executado com sucesso! :smiley:
 
