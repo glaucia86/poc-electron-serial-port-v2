@@ -22,7 +22,7 @@ A aplicação também precisa permitir listar as portas:
 
 Para realizar as demos dessa série, se faz necessário instalar os seguintes programas:
 
-* Visual Studio Code - [DOWNLOAD AQUI](https://code.visualstudio.com/);
+* Visual Studio Code - [DOWNLOAD AQUI](https://code.visualstudio.com/?WT.mc_id=javascript-0000-gllemos);
 * Node.JS v.8.x - [DOWNLOAD AQUI](https://nodejs.org/en/);
 * VueJs v. 3.x; - [DOWNLOAD AQUI](https://cli.vuejs.org/)
 * Yarn - [DOWNLOAD AQUI](https://yarnpkg.com/pt-BR/);
